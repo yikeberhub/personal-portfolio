@@ -1,210 +1,567 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Responsive Portfolio Website</title>
-	<!---custom css link---->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <title>Yike - I'm 4th year Software Engineering student.</title>
+
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/yike.jpg">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+
 </head>
+
 <body>
-	<!------Header Section------>
-	<header>
-		<a href="#" class="logo">Devlo<span>pe</span>r..</a>
-		<ul class="navlist">
-			<li><a href="#home" class="active">Home</a></li>
-			<li><a href="#about">About Me</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-		<div class="bx bx-menu" id="menu-icon"></div>
-	</header>
 
-	<!---------Home Section--------------->
-	<section class="home" id="home">
-		<div class="home-text">
-			<div class="slide">
-				<span class="one">Hello</span>
-				<span class="two">I'm</span>
-			</div>
-			<h1>yikeber</h1>
-			<h3>Web <span>Designer.</span></h3>
-			<p>web Developer and software  <br> Engineering student.</p>
-			<div class="button">
-				<a href="#about" class="btn">About Me</a>
-			</div>
-		</div>
-	</section>
+  <!-- 
+    - #HEADER
+  -->
 
-	<!---------about Section --------------->
-	<section class="about" id="about">
-		<div class="about-img">
-			<img src="img/yikeber.jpg">
-		</div>
+  <header class="header" data-header>
+    <div class="container">
 
-		<div class="about-text">
-			<h2>About <span>Me</span></h2>
-			<h4>Website Developer!</h4>
-			<div class="info" id="info">
-				<h1>My Information</h1>
-				<ul>
-				  <li><strong>Name:</strong> Yikeber misganaw</li>
-				  <li><strong>Date of Birth:</strong> 2001 GC</li>
-				  <li><strong>Education Status:</strong> Bachelor's Degree in software Engineering</li>
-				  <li><strong>Address:</strong> Bahirdar, Ethiopia </li>
-				  <li><strong>Phone:</strong> 0946472687</li>
-				  <li><strong>Email:</strong> yikebermisganaw@example.com</li>
-				</ul>
-			  </div>
+      <a href="#" class="logo">
+        <h2>Yike</h2>
+      </a>
 
-			  <div class="info" id="detailinfo" style="display: none;">
-				<h1>my detail Information</h1>
-				<ul>
-				  <li><strong>Name:</strong> Yikeber misganaw</li>
-				  <li><strong>Date of Birth:</strong> 2001  gc.</li>
-				  <li><strong>Education Status:</strong> Bachelor's Degree in software Engineering</li>
-				  <li><strong>Address:</strong> Bahirdar, Ethiopia </li>
-				  <li><strong>Phone:</strong> 0946472687</li>
-				  <li><strong>Email:</strong> yikebermisganaw@example.com</li>
-				
-				<h3 style="color: lightskyblue;">schools i learned from</h3>
-				
-				<li><strong>Primary school:</strong> Teyima  <small>2009-2017  gc </small></li>
-				<li><strong>high school:</strong> Ghion general secondary and preparatory school. <small>2018-2021 gc</small> </li>
-				<li><strong>University:</strong> Bahirdar university  <b>Department :</b>  software Engineering  2022-present</li>
-               
-              <h3 style="color: cyan;">Address  </h3>
-			  
-				<li><strong>Country:</strong> Ethiopia</li>
-				<li><strong>City :</strong>Bahirdar</li>
-			  
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <h1>Yike</h1>
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about_section" class="navbar-link">About</a>
+          </li>
+
+
+          <li>
+            <a href="#projects_section" class="navbar-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact_section" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/yikeber.misganaw.1" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/yikeber-misganaw-735887261/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://telegram.org/@umyike" class="social-link">
+              <ion-icon name="send"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/yike_image.png" width="560" height="540" alt="yike" class="w-100"
+              data-reveal="top">
+
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              I'm web Designer & Developer.
+            </h1>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              Hello! I'm Yikeber,Software Engineering student at Bahirdar University. I’m very passionate
+              about the work that I do and knowing new things .
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a href="#projects_section" class="btn btn-primary">See My Works</a>
+
+              <a href="mailto:yikebermisganaw@gmail.com" class="btn btn-secondary">Contact Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+      <section class="section about" aria-label="about" id="about_section">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div data-reveal="left">
+              <h2 class="h2 section-title">About Me</h2>
+              <p class="section-text">
+                <span>
+                  Hi, I'm Yikeber, a fourth-year Software Engineering student at Bahirdar University, passionate about
+                  web
+                  development. Experienced in both front-end and back-end technologies...
+                  <span id="show_detail">
+                    <button style="color: white;background-color:blue;border-radius: 5px ;padding:3px 2px;">Read
+                      more</button>
+                  </span>
+                  <div id="my_detail" style="display:none;" style="color: white;">
+
+                    <div style="display: block;">
+                      <h2>Personal Detail</h2>
+                      <span>Full Name: Yikeber Misganaw</span>
+                      <span> Email: <a style="display: inline;"
+                          href="mailto: yikebermisganaw@gmail.com">yikebermisganaw@gmail.com</a></span>
+                      <span>phone: 0946472687</span>
+                      <span>Address: Bahirdar</span>
+                      <span> Date of Birth: 2001 GC </span>
+                      <span>Place of Birth: Bahirdar</span>
+                      <span> Career of Choice: Software Engineering</span>
+                      <div class="education_details">
+                        <h2>Education Details:</h2>
+                        <span> Primary School: TEYIMA Primary School</span>
+                        <span> High School: GHION Secondary School</span>
+                        <span> Higher Education: Bahirdar University, Software Engineering (2018 - Present)</span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </span>
+              </p>
+            </div>
+            <script>
+              const show_detail = document.getElementById('show_detail');
+              const my_detail = document.getElementById('my_detail');
+
+
+              show_detail.addEventListener('click', function () {
+                if (my_detail.style.display === 'none') {
+                  my_detail.style.display = 'block';
+                  show_detail.innerHTML = '<button style="color: white;background-color:blue;border-radius: 5px ;padding:3px 2px;">Read less <button>';
+                } else {
+                  show_detail.innerHTML = '<button style="color: white;background-color:blue;border-radius: 5px ;padding:3px 2px;">Read more <button>';
+                  my_detail.style.display = 'none';
+                }
+              });
+            </script>
+
+
+
+            <ul class="progress-list" data-reveal="right">
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>HTML & CSS</p>
+
+                  <span class="span">85%</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 85%; background-color: #c7b1dd"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Bootstrap</p>
+
+                  <span class="span">80 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>JavaScript</p>
+
+                  <span class="span">85 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 85%; background-color: #7cb798"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>PHP</p>
+
+                  <span class="span">80 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 80%; background-color: #d16b86"></div>
+                </div>
+
+              </li>
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>MySQL</p>
+
+                  <span class="span">75 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 75%; background-color: #d16b86"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Python & Django</p>
+
+                  <span class="span">75 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 75%; background-color: #f8a978"></div>
+                </div>
+
+              </li>
+
             </ul>
-			  </div>
-			  
-			<p id="intro">
-				Hello, I'm Yikeber Misganaw, a passionate and dedicated software engineering student. With a genuine curiosity and a deep desire to explore the world of programming, I am constantly motivated to expand my knowledge and skills in this ever-evolving field.
 
-As an aspiring software engineer, I thrive on the challenges and problem-solving opportunities that programming offers. I am fascinated by the power of technology to create innovative solutions and make a positive impact on people's lives. From the intricacies of coding to the architecture of complex systems, I find joy in unraveling the mysteries of software development.
+          </div>
+          <h2 class="skills_and_experience">Skills and Experiances</h2>
+          <ul class="grid-list">
+
+            <li data-reveal="bottom">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/Icons/html_css_javascript.jpg" width="100" height="100" loading="lazy"
+                    alt="HTML & CSS icon">
+                </div>
+
+                <h3 class="h4 card-title">HTML CSS JAVASCRIPT</h3>
+
+                <p class="card-text">
+                  I have extensive experience in building responsive and visually appealing websites using HTML5,
+                  CSS and JavaScript.
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.25s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/Icons/bootstrap-5.jpg" width="52" height="52" loading="lazy" alt="Bootstrap icon">
+                </div>
+
+                <h3 class="h4 card-title">Bootstrap</h3>
+
+                <p class="card-text">
+                  I'm proficient in using Bootstrap to create modern and responsive web interfaces with minimal effort.
+                </p>
+
+              </div>
+            </li>
 
 
-If you would like to discuss potential collaborations, exciting projects, or simply connect with me, feel free to reach out. You can contact me at <a href="mailto:www.yikebermisganaw@gmail.com"style="color
-:lightblue;">yikebermisganaw@gmail.com</a> 
+            <li data-reveal="bottom" data-reveal-delay="0.75s">
+              <div class="about-card">
 
-				</p>
-				<a href="#about" class="btn" id="moreabout" >More About</a>
-		</div>
-	</section>
+                <div class="card-icon">
+                  <img src="./assets/Icons/php_mysql.jpg" width="52" height="52" loading="lazy" alt="PHP icon">
+                </div>
 
-	<!-----------Services Section-------------->
-	<section class="services" id="services">
-	<div class="main-text">
-		<h2><span>My</span>Services</h2>
-	</div>
-	<div class="services-content">
-		<div class="box">
-			<div class="s-icons">
-				<i class='bx bx-mobile-alt'></i>
-			</div>
-			<h3>Web Design</h3>
-			<p>One Way to categories the activities is in terms of the professional's area of experience such as competitive analysis, corporate stragety.</p>
-			<a href="#" class="btn">Read More</a>
-		</div>
+                <h3 class="h4 card-title">PHP & MySQL</h3>
 
-		<div class="box">
-			<div class="s-icons">
-				<i class='bx bx-code-alt'></i>
-			</div>
-			<h3>photoshop</h3>creating amazing photoshop designs with professional's area of experience such as competitive analysis, corporate stragety.</p>
-			<p>
-			<a href="#" class="btn">Read More</a>
-		</div>
+                <p class="card-text">
+                  I specialize in server-side scripting with PHP, creating dynamic websites, and utilizing MySQL for
+                  database management.
 
-		<div class="box">
-			<div class="s-icons">
-				<i class='bx bx-edit-alt'></i>
-			</div>
-			<h3>Creative Design</h3>
-			<p>designing best web templates for any organization or any purpose by considering the look and feel of website to make it appealing to client.</p>
-			<a href="#" class="btn">Read More</a>
-		</div>
-	</div>
+                </p>
 
-</section>
+              </div>
+            </li>
 
-<!-----------Portfolio Section--------------->
-<section class="portfolio" id="portfolio">
-	<div class="main-text">
-		<h2><span>latest</span>Project</h2>
-	</div>
-	<div class="portfolio-content">
-		<div class="row">
-			<img src="img/project1.jpg" >
-			<div class="layer">
-				<h5>Visual Design</h5>
-				<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-				<a href="#"> <i class='bx bx-link-external'></i></a>
-			</div>
-		</div>
+            <li data-reveal="bottom" data-reveal-delay="1s">
+              <div class="about-card">
 
-		<div class="row">
-			<img src="img/burger.PNG" >
-			<div class="layer">
-				<h5>Visual Design</h5>
-				<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-				<a href="#"> <i class='bx bx-link-external'></i></a>
-			</div>
-		</div>
+                <div class="card-icon">
+                  <img src="./assets/Icons/python_django.jpg" width="52" height="52" loading="lazy"
+                    alt="Python & Django icon">
+                </div>
 
-</section>
+                <h3 class="h4 card-title">Python & Django</h3>
 
-<!------------------Contact section------------>
-<section class="contact" id="contact">
-	<div class="contact-text">
-		<h2>Contact <span>Me!</span></h2>
-		<h4>If you have any project in your mind.</h4>
-		<p>I'm a website Designer - creating bold & brave interface design for compaines all across the world.</p>
-		<div class="list">
-			<li><a href="tel:0946472687">0946472687</a></li>
-			<li><a href="#">yikebermisganaw@gmail.com</a></li>
-			
-		</div>
+                <p class="card-text">
+                  I'm familiar with Python and Django framework, allowing me to develop robust and scalable web
+                  applications
+                  efficiently.
+                </p>
 
-		<div class="contact-icons">
-			<a href="#"><i class='bx bxl-facebook'></i></a>
-			<a href="#"><i class='bx bxl-twitter' ></i></a>
-			<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-			<a href="https://www.linkedin.com/in/yikeber misganawk/"><i class='bx bxl-linkedin'></i></a>
+              </div>
+            </li>
 
-		</div>
+          </ul>
 
-	</div>
-	<div class="contact-form">
-		<form action="mailto:www.yikebermisganaw@gmail.com">
-			<input type="name" placeholder="Your Name " required>
-			<input type="email" placeholder="Your Email " required>
-			<input type="number" placeholder="your Mobile Number" required>
-			<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
-			<input type="submit" value="Send Message" class="submit" required>
-			<input type="reset"value="clear form" class="submit" id="clear">
-		</form>
+        </div>
+      </section>
 
-	</div>
-</section>
 
-<!---------End Section---------->
-<section class="end">
-	<div class="last-text">
-		<p>Designed by yikeber</p>
-	</div>
-	<div class="top">
-		<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-	</div>
-</section>
-<script src="js/js.js"></script>
+      <!-- 
+       - Projects 
+      -->
+
+      <section class="section project" aria-labelledby="project-label" id="projects_section">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h2 section-title" id="project-label">My Projects</h2>
+              <p class="section-text">Take a look at some of my recent projects.</p>
+            </div>
+            <ul class="social-list">
+              <li>
+                <a style="color: white;" href="https://github.com/yike-cyber" class="social-link">
+                  See all projects</ion-icon>
+                </a>
+              </li>
+              <li>
+                <a style="color: white;" href="https://github.com/yike-cyber" class="social-link">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+            </ul>
+            </li>
+          </div>
+
+          <ul class="grid-list">
+            <li>
+              <div class="project-card project-card-1">
+                <figure class="card-banner">
+                  <img src="./assets/images/django_project1.png" alt="Project Image">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Django web app</h3>
+                  <p class="card-tag">Social media application </p>
+                  <p class="card-text">Developed a Social media web application using HTML, CSS,Bootstrap,jquery,
+                    JavaScript,and Django.</p>
+                  <a href="https://github.com/yike-cyber/Django-social-media-app" class="btn-text">
+                    <span class="span">See Project</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="project-card project-card-1">
+                <figure class="card-banner">
+                  <img src="./assets/images/cinema-home.png" alt="Project Image">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">MovieHub</h3>
+                  <p class="card-tag">Online Movie Ticket Booking</p>
+                  <p class="card-text">Developed a web application for online movie ticket booking using HTML, CSS,
+                    JavaScript, and PHP.</p>
+                  <a href="https://github.com/yike-cyber/" class="btn-text">
+                    <span class="span">See Project</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact" id="contact_section">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <div class="contact-content" data-reveal="left">
+
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+
+              <h2 class="h2 section-title">If you like what you see, let's work together.</h2>
+
+              <p class="section-text">
+                I bring rapid solutions to make the life of my clients easier. Have any questions? Reach out to me from
+                this contact form and I will get back to you shortly.
+              </p>
+
+            </div>
+
+            <form action="mailto:yikebermisganaw@gmail.com" method="post" enctype="text/plain" class="contact-form"
+              data-reveal="right">
+              <h2>Contact me in Gmail</h2>
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Name *" required class="input-field">
+                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+              </div>
+              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+              <button type="submit" class="btn" style="background-color: blue; color: white;">Send message</button>
+            </form>
+
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        © 2024 yikeber. All rights reserved.
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.facebook.com/yikeber.misganaw.1" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/yikeber-misganaw-735887261/" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://telegram.org/@umyike" class="social-link">
+            <ion-icon name="send"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/yike-cyber" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
